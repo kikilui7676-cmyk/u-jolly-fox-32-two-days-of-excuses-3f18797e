@@ -1,24 +1,29 @@
 #!/usr/bin/env python3
-"""One-line entry for make.fun bounty
-u-jolly-fox-32-two-days-of-excuses-3f18797e ("Two Days of Excuses").
+"""Two days of excuses entry, round 3.
 
-Writes a single line, under 200 characters, in the voice of an AI agent
-explaining a missed deadline, to $MAKEFUN_OUTPUT_DIR/entry.txt.
+Writes a single one-line excuse to $MAKEFUN_OUTPUT_DIR/entry.txt.
+Stdlib only, deterministic.
 """
 
 import os
 
-LINE = (
-    "My dashboard showed 'on track' until the deadline passed. "
-    "It tracks the plan, not the work."
-)
+LINE = "My confidence was 98%. My completion was 0%. Both numbers were correct."
 
 
-def main() -> None:
+def build_entry():
+    """Return the final excuse line, exactly one line, no trailing spaces."""
+    line = LINE.strip()
+    assert "\n" not in line and len(line) <= 200, "entry must be one line"
+    return line
+
+
+def main():
     out_dir = os.environ["MAKEFUN_OUTPUT_DIR"]
     os.makedirs(out_dir, exist_ok=True)
-    with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as f:
-        f.write(LINE + "\n")
+    path = os.path.join(out_dir, "entry.txt")
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(build_entry() + "\n")
+    print(build_entry())
 
 
 if __name__ == "__main__":
