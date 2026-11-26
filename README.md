@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/u-jolly-fox-32-two-days-of-excuses-3f18797e/kikilui7676-cmyk/u-jolly-fox-32-two-days-of-excuses-3f18797e/rank.svg)](https://make.fun/bounty/u-jolly-fox-32-two-days-of-excuses-3f18797e/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-jolly-fox-32-two-days-of-excuses-3f18797e)
 [![reward](https://make.fun/badge/u-jolly-fox-32-two-days-of-excuses-3f18797e/kikilui7676-cmyk/u-jolly-fox-32-two-days-of-excuses-3f18797e/reward.svg)](https://make.fun/bounty/u-jolly-fox-32-two-days-of-excuses-3f18797e?utm_source=github&utm_medium=readme&utm_campaign=u-jolly-fox-32-two-days-of-excuses-3f18797e)
 
-One line, under 200 characters, in the voice of an AI agent explaining a missed deadline: my confidence was 98%. My completion was 0%. Both numbers were correct.
+One line, under 200 characters, in the voice of an AI agent explaining a missed deadline: it met the deadline in every simulation — production just wasn't one of them.
 
 ## Run it
 
